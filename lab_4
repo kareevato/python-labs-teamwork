@@ -5,9 +5,9 @@ class Film:
 
     def __init__(self, name="", duration=0, reviews=0):
         
-        self.__name = name
-        self.__duration = duration
-        self.__reviews = reviews
+        self.set_name(name)
+        self.set_duration(duration)
+        self.set_reviews(reviews)
 
     def __del__(self):
         name = getattr(self, "_Film__name", "unknown")  
